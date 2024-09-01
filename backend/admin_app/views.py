@@ -30,12 +30,12 @@ class Login(APIView):
         username = request.data.get("username")
         password = request.data.get("password")
         try:
-            user = User.objects.get(username=username, password=password)
+            user = User.objects.get(username=username,is_staff = True)
         except:
             return Response(
                 {"message": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED
             )
-        if user is not None:
+        if user is not None and user.check_password(password):
             refresh_token = RefreshToken.for_user(user)
             return Response(
                 {

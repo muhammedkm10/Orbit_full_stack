@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Category, Products
+from django.contrib.auth.hashers import make_password
+
 
 
 class Registration_serializer(serializers.ModelSerializer):
@@ -11,10 +13,13 @@ class Registration_serializer(serializers.ModelSerializer):
         fields = ("username", "email", "password")
 
     def create(self, validate_data):
+        hashed_password = make_password(validate_data["password"])
         user = User.objects.create(
             username=validate_data["username"],
             email=validate_data["email"],
-            password=validate_data["password"],
+            password=hashed_password,
+            is_staff = True,
+            is_superuser=True
         )
         return user
 

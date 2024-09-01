@@ -58,6 +58,9 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
+AUTH_PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
