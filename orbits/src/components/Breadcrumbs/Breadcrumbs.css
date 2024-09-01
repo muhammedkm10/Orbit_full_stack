@@ -1,0 +1,63 @@
+/* Basic Breadcrumb Styling */
+.breadcrumb {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* background: black !important; */
+    height: 7rem;
+    width: 100%;
+    color: black;
+    font-size: 35px;
+
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 30px;
+
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .breadcrumb span {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+
+  }
+  
+  .breadcrumb .separator {
+    margin: 0 8px;
+    color: #6c757d;
+  }
+  
+  .breadcrumb .active {
+    color: #343a40;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 767px) {
+    .breadcrumb {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .breadcrumb a {
+      font-size: 14px;
+    }
+  
+    .breadcrumb .separator {
+      margin: 0 6px;
+    }
+  }
+  

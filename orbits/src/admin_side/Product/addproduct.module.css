@@ -1,0 +1,37 @@
+.maindiv {
+  background-color: rgb(245, 208, 208);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_container {
+  border-radius: 20px;
+
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addbutton {
+  background-color: rgb(15, 108, 61);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+  color: white;
+}
+.link {
+  text-align: center;
+}
+.account_check {
+  display: inline;
+}
+.lower {
+  padding-top: 5px;
+  font-size: 12px;
+}

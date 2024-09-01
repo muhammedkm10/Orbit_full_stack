@@ -1,0 +1,11 @@
+.input{
+    background-color: white;
+    padding: 6px 20px;
+    margin: 2vh;
+    color: rgb(92, 89, 89);
+    border: none;
+    border-radius: 8px;
+}
+input::-webkit-input-placeholder {
+    text-align: center;
+  }

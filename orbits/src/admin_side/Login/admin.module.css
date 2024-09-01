@@ -1,0 +1,47 @@
+.maindiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_container {
+  background-image: linear-gradient(to right,rgb(67, 163, 178),rgb(27, 27, 213));
+  border-radius: 20px;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register_button {
+  color: white;
+  background-color: rgb(24, 36, 6);
+  border: none;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 3px 30px;
+  margin-top: 1vh;
+}
+
+.register_button:hover{
+    background-color:rgb(177, 169, 169);
+    color: black;
+}
+
+.link {
+  text-align: center;
+  color: white;
+  padding-left: 2px;
+
+}
+.account_check {
+  display: inline;
+}
+.lower {
+  padding-top: 3vh;
+  font-size: 12px;
+}
